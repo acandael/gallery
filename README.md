@@ -1,3 +1,5 @@
+React Gallery App for Treehouse Javascript Full Stack Tech Degree
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
