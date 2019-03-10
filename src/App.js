@@ -7,9 +7,10 @@ import axios from 'axios';
 // Import components
 import Header from './components/Header';
 import Nav from './components/Nav';
+import SearchBar from './components/SearchBar';
 import SearchResults from './components/SearchResults';
 
-// Create a variable to store the API key
+// store the API key
 const api = apiKey;
 
 class App extends Component {
@@ -40,7 +41,7 @@ class App extends Component {
         });
       })
       .catch(function(error) {
-        console.log('Error fetching and parsing data', error);
+        console.log('There was a problem with fetching the data', error);
       });
   };
 
@@ -56,7 +57,7 @@ class App extends Component {
         });
       })
       .catch(function(error) {
-        console.log('Error fetching and parsing data', error);
+        console.log('There was a problem with fetching the data', error);
       });
   };
 
@@ -72,7 +73,7 @@ class App extends Component {
         });
       })
       .catch(function(error) {
-        console.log('Error fetching and parsing data', error);
+        console.log('There was a problem with fetching the data', error);
       });
   };
 
@@ -88,7 +89,7 @@ class App extends Component {
         });
       })
       .catch(function(error) {
-        console.log('Error fetching and parsing data', error);
+        console.log('There was a problem with fetching the data', error);
       });
   };
 
@@ -97,6 +98,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="container">
           <Header />
+          <SearchBar searchPic={this.mainSearch} />
           <Nav />
           <Switch>
             <Route

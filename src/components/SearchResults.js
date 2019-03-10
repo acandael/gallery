@@ -3,9 +3,7 @@ import Picture from './Picture';
 import NoResults from './NoResults';
 
 const SearchResults = props => {
-  // {/* display seach results here
-  // if no search results available,
-  // display an error message */}
+  // Show search results or error page if no results
   const results = props.data;
   let pics;
   if (results) {
