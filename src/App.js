@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
-import Gallery from './components/Gallery';
+import Photo from './components/Photo';
 import SearchBar from './components/SearchBar';
 import Page404 from './components/Page404';
 
@@ -57,13 +57,13 @@ export default class App extends Component {
               <Route
                 exact
                 path="/"
-                render={() => <Gallery data={this.state.cows} />}
+                render={() => <Photo data={this.state.cows} />}
               />
               <Route
                 exact
                 path="/cats"
                 render={() => (
-                  <Gallery
+                  <Photo
                     mainSearch={this.mainSearch('cats', 'cats')}
                     data={this.state.cats}
                   />
@@ -73,7 +73,7 @@ export default class App extends Component {
                 exact
                 path="/dogs"
                 render={() => (
-                  <Gallery
+                  <Photo
                     mainSearch={this.mainSearch('dogs', 'dogs')}
                     data={this.state.dogs}
                   />
@@ -83,7 +83,7 @@ export default class App extends Component {
                 exact
                 path="/computers"
                 render={() => (
-                  <Gallery
+                  <Photo
                     mainSearch={this.mainSearch('computers', 'computers')}
                     data={this.state.computers}
                   />
@@ -92,7 +92,7 @@ export default class App extends Component {
               <Route
                 exact
                 path="/results"
-                render={() => <Gallery data={this.state.results} />}
+                render={() => <Photo data={this.state.results} />}
               />
               <Route component={Page404} />
             </Switch>
