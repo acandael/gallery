@@ -8,7 +8,7 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Photo from './components/Photo';
 import SearchBar from './components/SearchBar';
-import Page404 from './components/Page404';
+import PageNotFound from './components/PageNotFound';
 
 export default class App extends Component {
   constructor(props) {
@@ -94,7 +94,7 @@ export default class App extends Component {
                 path="/results"
                 render={() => <Photo data={this.state.results} />}
               />
-              <Route component={Page404} />
+              <Route component={PageNotFound} />
             </Switch>
           )}
         </div>

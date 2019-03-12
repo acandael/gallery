@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Page404 = () => (
+const PageNotFound = () => (
   <div>
     <ul>
       <li className="not-found">
@@ -21,4 +21,4 @@ const Page404 = () => (
   </div>
 );
 
-export default Page404;
+export default PageNotFound;
