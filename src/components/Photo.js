@@ -4,7 +4,7 @@ import '../App';
 import NoResults from './NoResults';
 
 // This functional component takes the data App's mainSearch and creates an array
-const Gallery = props => {
+const Photo = props => {
   const results = props.data;
   let items;
   if (results && results.length > 0) {
@@ -28,4 +28,4 @@ const Gallery = props => {
   );
 };
 
-export default Gallery;
+export default Photo;
